@@ -23,6 +23,10 @@ def main():
 	  return sorting_func_a()
   elif sorting_func == "b":
 	  return sorting_func_b()
+  else:
+	  print("Error: The function you requested has not been implemented")
+	  return
+
 
 if __name__== "__main__":
   main()
