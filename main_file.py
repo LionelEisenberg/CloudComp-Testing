@@ -5,9 +5,11 @@ import sys
 NUM_ARGS = 2
 
 def sorting_func_a():
+	print("a function running")
 	return
 
 def sorting_func_b():
+	print("b function running")
 	return
 
 def main():
