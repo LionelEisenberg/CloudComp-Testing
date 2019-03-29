@@ -16,11 +16,19 @@ def bubble_sort(array):
 		for j in range(len(array) - i - 1):
 			if array[j] > array[j+1]:
 				array = swap(array, j, j + 1)
-	
+	print(array)
 	return
 
 def insertion_sort(array):
 	print("insertion sort running")
+	for i in range(0, len(array)):
+		insert = array[i]
+		j = i
+		while j > 0 and array[j - 1] > insert:
+			array[j] = array[j - 1]
+			j -= 1;
+		array[j] = insert
+	print(array)
 	return
 
 def selection_sort(array):
