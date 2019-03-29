@@ -30,8 +30,7 @@ def main():
   filename = arguments[2]
   with open(filename) as f:
     array = f.readlines()
-
-  array = [i.strip() for i in content]
+  array = [int(i.strip()) for i in array]
 
   if sorting_func == "a":
 	  return sorting_func_a(array)
