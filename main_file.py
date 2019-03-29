@@ -4,8 +4,19 @@ import sys
 ### Declare variables
 NUM_ARGS = 3
 
+def swap(array, i, j):
+	temp = array[i]
+	array[i] = array[j]
+	array[j] = temp
+	return array
+
 def bubble_sort(array):
 	print("bubble sort running")
+	for i in range(len(array)):
+		for j in range(len(array) - i - 1):
+			if array[j] > array[j+1]:
+				array = swap(array, j, j + 1)
+	
 	return
 
 def insertion_sort(array):
