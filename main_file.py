@@ -16,8 +16,7 @@ def bubble_sort(array):
 		for j in range(len(array) - i - 1):
 			if array[j] > array[j+1]:
 				array = swap(array, j, j + 1)
-	print(array)
-	return
+	return array
 
 def insertion_sort(array):
 	print("insertion sort running")
@@ -28,8 +27,7 @@ def insertion_sort(array):
 			array[j] = array[j - 1]
 			j -= 1;
 		array[j] = insert
-	print(array)
-	return
+	return array
 
 def selection_sort(array):
 	print("selection sort running")
@@ -42,8 +40,7 @@ def selection_sort(array):
 				should_swap = True
 		if should_swap:
 			array = swap(array, min, i)
-	print(array)
-	return
+	return array
 
 def main():
   arguments = sys.argv
@@ -51,7 +48,7 @@ def main():
   # Check if the number of arguments is accurate to what we are expecting
   if len(arguments) != NUM_ARGS:
 	  print("Error: The number of arguments given does not satisfy the required number")
-	  return
+	  return ""
 
   sorting_func = arguments[1]
 
@@ -63,7 +60,7 @@ def main():
 	  array = [int(i.strip()) for i in array]
   except EnvironmentError:
 	  print("Error: The file you requested is not valid.")
-	  return
+	  return ""
 
   if sorting_func == "bubble":
 	  return bubble_sort(array)
@@ -73,8 +70,9 @@ def main():
 	  return selection_sort(array)
   else:
 	  print("Error: The function you requested has not been implemented")
-	  return
+	  return ""
 
 
 if __name__== "__main__":
-  main()
+  final_result = main()
+  print(final_result)
