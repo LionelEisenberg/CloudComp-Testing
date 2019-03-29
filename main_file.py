@@ -4,15 +4,15 @@ import sys
 ### Declare variables
 NUM_ARGS = 3
 
-def sorting_func_a(file):
+def sorting_func_a(array):
 	print("a function running")
 	return
 
-def sorting_func_b(file):
+def sorting_func_b(array):
 	print("b function running")
 	return
 
-def sorting_func_c(file):
+def sorting_func_c(array):
 	print("c function running")
 	return
 
@@ -26,12 +26,14 @@ def main():
   sorting_func = arguments[1]
   filename = arguments[2]
   file = open(filename, 'r')
+  for line in file:
+	  print(file)
   if sorting_func == "a":
-	  return sorting_func_a(file)
+	  return sorting_func_a(array)
   elif sorting_func == "b":
-	  return sorting_func_b(file)
+	  return sorting_func_b(array)
   elif sorting_func == "c":
-	  return sorting_func_c(file)
+	  return sorting_func_c(array)
   else:
 	  print("Error: The function you requested has not been implemented")
 	  return
