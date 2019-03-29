@@ -2,7 +2,7 @@
 import sys
 
 ### Declare variables
-NUM_ARGS = 2
+NUM_ARGS = 3
 
 def sorting_func_a(file):
 	print("a function running")
@@ -25,6 +25,7 @@ def main():
 
   sorting_func = arguments[1]
   filename = arguments[2]
+  file = open(filename, 'r')
   if sorting_func == "a":
 	  return sorting_func_a(file)
   elif sorting_func == "b":
