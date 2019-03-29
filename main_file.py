@@ -4,18 +4,17 @@ import sys
 ### Declare variables
 NUM_ARGS = 3
 
-def sorting_func_a(array):
-	print("a function running")
+def bubble_sort(array):
+	print("bubble sort running")
 	return
 
-def sorting_func_b(array):
-	print("b function running")
+def insertion_sort(array):
+	print("insertion sort running")
 	return
 
-def sorting_func_c(array):
-	print("c function running")
+def selection_sort(array):
+	print("selection sort running")
 	return
-
 
 def main():
   arguments = sys.argv
@@ -36,13 +35,13 @@ def main():
   except EnvironmentError:
 	  print("Error: The file you requested is not valid.")
 	  return
-  print(array)
-  if sorting_func == "a":
-	  return sorting_func_a(array)
-  elif sorting_func == "b":
-	  return sorting_func_b(array)
-  elif sorting_func == "c":
-	  return sorting_func_c(array)
+
+  if sorting_func == "bubble":
+	  return bubble_sort(array)
+  elif sorting_func == "insertion":
+	  return insertion_sort(array)
+  elif sorting_func == "selection":
+	  return selection_sort(array)
   else:
 	  print("Error: The function you requested has not been implemented")
 	  return
