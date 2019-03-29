@@ -33,6 +33,16 @@ def insertion_sort(array):
 
 def selection_sort(array):
 	print("selection sort running")
+	for i in range(len(array)):
+		min = i
+		should_swap = False
+		for j in range(i + 1, len(array)):
+			if array[j] < array[min]:
+				min = j
+				should_swap = True
+		if should_swap:
+			array = swap(array, min, i)
+	print(array)
 	return
 
 def main():
