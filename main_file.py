@@ -27,11 +27,16 @@ def main():
 
   sorting_func = arguments[1]
 
+  # Takes filename, opens file, and transcribes file contents to an array.
   filename = arguments[2]
-  with open(filename) as f:
-    array = f.readlines()
-  array = [int(i.strip()) for i in array]
-
+  try:
+	  with open(filename) as f:
+	    array = f.readlines()
+	  array = [int(i.strip()) for i in array]
+  except EnvironmentError:
+	  print("Error: The file you requested is not valid.")
+	  return
+  print(array)
   if sorting_func == "a":
 	  return sorting_func_a(array)
   elif sorting_func == "b":
