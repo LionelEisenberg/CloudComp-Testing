@@ -75,4 +75,5 @@ def main():
 
 if __name__== "__main__":
   final_result = main()
-  print(final_result)
+  for i in final_result:
+	  print(i)
