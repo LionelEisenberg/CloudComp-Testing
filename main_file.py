@@ -11,7 +11,6 @@ def swap(array, i, j):
 	return array
 
 def bubble_sort(array):
-	print("bubble sort running")
 	for i in range(len(array)):
 		for j in range(len(array) - i - 1):
 			if array[j] > array[j+1]:
@@ -19,7 +18,6 @@ def bubble_sort(array):
 	return array
 
 def insertion_sort(array):
-	print("insertion sort running")
 	for i in range(0, len(array)):
 		insert = array[i]
 		j = i
@@ -30,7 +28,6 @@ def insertion_sort(array):
 	return array
 
 def selection_sort(array):
-	print("selection sort running")
 	for i in range(len(array)):
 		min = i
 		should_swap = False
