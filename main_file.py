@@ -70,7 +70,7 @@ def main():
 if __name__== "__main__":
 	try:
 	  final_result = main()
-	  if final_result = "error":
+	  if final_result == "error":
 		  print("error")
 	  for i in final_result:
 		  print(i)
