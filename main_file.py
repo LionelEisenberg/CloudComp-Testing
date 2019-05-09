@@ -35,8 +35,8 @@ def selection_sort(array):
 			if array[j] < array[min]:
 				min = j
 				should_swap = True
-		if should_swap:
-			array = swap(array, min, i)
+		#if should_swap:
+			#array = swap(array, min, i)
 	return array
 
 def main():
