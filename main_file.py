@@ -22,9 +22,9 @@ def insertion_sort(array):
 		insert = array[i]
 		j = i
 		while j > 0 and array[j - 1] > insert:
-			array[j] = array[j - 1]
+			#array[j] = array[j - 1]
 			j -= 1;
-		array[j] = insert
+		#array[j] = insert
 	return array
 
 def selection_sort(array):
