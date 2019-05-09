@@ -14,8 +14,7 @@ def bubble_sort(array):
 	for i in range(len(array)):
 		for j in range(len(array) - i - 1):
 			if array[j] > array[j+1]:
-				temp = 1
-				#array = swap(array, j, j + 1)
+				array = swap(array, j, j + 1)
 	return array
 
 def insertion_sort(array):
