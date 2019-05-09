@@ -16,3 +16,5 @@ Functional version of the program, all of our sorting algorithms work: the progr
 
     1. Specific sorting function (insertion, selection, and bubble).
     2. Filename with non sorted intergers, one per line, to be sorted.
+
+Benchmark commit 1
